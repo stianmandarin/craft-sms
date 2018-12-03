@@ -1,0 +1,45 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Craft SMS plugin for Craft CMS 3.x
+ *
+ * Craft SMS Settings.twig
+ *
+ * @author    Mandarin Design
+ * @copyright Copyright (c) 2018 Mandarin Design
+ * @link      https://mandarindesign.no
+ * @package   CraftSms
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("mandarindesign\\craftsms\\assetbundles\\craftsms\\CraftSmsAsset") %}
+
+{{ forms.textField({
+    label: 'Twilio SID',
+    instruction: 'See your Twilio account for this information',
+    id: 'twilioSid',
+    name: 'twilioSid',
+    required: true,
+    value: settings['twilioSid']})
+}}
+
+{{ forms.textField({
+    label: 'Twilio Token',
+    instruction: 'See your Twilio account for this information',
+    id: 'twilioToken',
+    name: 'twilioToken',
+    required: true,
+    value: settings['twilioToken']})
+}}
+
+{{ forms.textField({
+    label: 'Twilio Number',
+    instruction: 'See your Twilio account for this information',
+    id: 'twilioNumber',
+    name: 'twilioNumber',
+    required: true,
+    value: settings['twilioNumber']})
+}}
