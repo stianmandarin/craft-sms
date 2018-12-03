@@ -7,7 +7,8 @@ Send SMS using Twilio.
 * Craft CMS 3.0.0-beta.23 or later.
 * A [Twilio](https://twilio.com/) account.
 
-## Installation
+
+<!-- ## Installation
 
 To install the plugin, follow these instructions.
 
@@ -20,7 +21,7 @@ To install the plugin, follow these instructions.
         composer require stianmandarin/craft-sms
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Craft SMS.
-
+-->
 ## Configuring Craft SMS
 
 * Enter your twilio `SID`, `token` and `number` you're sending from in the plugin settings.
