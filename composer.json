@@ -1,43 +1,43 @@
 {
-      "minimum-stability": "dev",
+  "minimum-stability": "dev",
   "prefer-stable": true,
-    "name": "mandarindesign/craft-sms",
-    "description": "Send SMS using Twilio.",
-    "type": "craft-plugin",
-    "version": "1.0.0",
-    "keywords": [
-        "craft",
-        "cms",
-        "craftcms",
-        "craft-plugin",
-        "craft sms"
-    ],
-    "support": {
-        "docs": "https://github.com/stianmandarin/craft-sms/blob/master/README.md",
-        "issues": "https://github.com/stianmandarin/craft-sms/issues"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mandarin Design",
-            "homepage": "https://mandarindesign.no"
-        }
-    ],
-    "require": {
+  "name": "mandarindesign/craft-sms",
+  "description": "Send SMS using Twilio.",
+  "type": "craft-plugin",
+  "version": "1.0.0",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "craft sms"
+  ],
+  "support": {
+    "docs": "https://github.com/stianmandarin/craft-sms/blob/master/README.md",
+    "issues": "https://github.com/stianmandarin/craft-sms/issues"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mandarin Design",
+      "homepage": "https://mandarindesign.no"
+    }
+  ],
+  "require": {
     "craftcms/cms": "^3.0.0",
     "twilio/sdk": "^5.24"
   },
-    "autoload": {
-        "psr-4": {
-          "mandarindesign\\craftsms\\": "src/"
-        }
-    },
-    "extra": {
-        "name": "Craft SMS",
-        "handle": "craft-sms",
-        "hasCpSettings": true,
-        "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/stianmandarin/craft-sms/master/CHANGELOG.md",
-        "class": "mandarindesign\\craftsms\\CraftSms"
+  "autoload": {
+    "psr-4": {
+      "mandarindesign\\craftsms\\": "src/"
     }
+  },
+  "extra": {
+    "name": "Craft SMS",
+    "handle": "craft-sms",
+    "hasCpSettings": true,
+    "hasCpSection": false,
+    "changelogUrl": "https://raw.githubusercontent.com/stianmandarin/craft-sms/master/CHANGELOG.md",
+    "class": "mandarindesign\\craftsms\\CraftSms"
+  }
 }
